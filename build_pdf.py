@@ -87,7 +87,7 @@ def parse_args():
 
     if args.cookie:
         try:
-            args.cookie = base64.b64decode(cmdline_args.cookie)
+            args.cookie = base64.b64decode(args.cookie)
         except:
             logging.exception("[-] Error decoding cookie!")
             sys.exit(1)
