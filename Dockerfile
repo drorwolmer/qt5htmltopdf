@@ -27,3 +27,5 @@ ENV QTWEBENGINE_CHROMIUM_FLAGS=--no-sandbox
 ENV QTWEBENGINE_DISABLE_SANDBOX=1
 
 COPY build_pdf.py .
+
+ENTRYPOINT ["python", "./build_pdf.py"]
